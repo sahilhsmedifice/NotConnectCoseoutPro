@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-05T15:46:03 IST" name="Default suite" finished-at="2026-05-05T15:50:59 IST" duration-ms="295980">
+    <groups>
+    </groups>
+    <test started-at="2026-05-05T15:46:03 IST" name="Default test" finished-at="2026-05-05T15:50:59 IST" duration-ms="295980">
+      <class name="CloseoutPro.NotConnect.WarrantyTest">
+        <test-method signature="selectProject()[pri:1, instance:CloseoutPro.NotConnect.WarrantyTest@47eaca72]" started-at="2026-05-05T15:46:03 IST" name="selectProject" finished-at="2026-05-05T15:46:33 IST" duration-ms="30190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProject -->
+        <test-method signature="createWarranty()[pri:2, instance:CloseoutPro.NotConnect.WarrantyTest@47eaca72]" started-at="2026-05-05T15:46:33 IST" name="createWarranty" finished-at="2026-05-05T15:50:59 IST" duration-ms="265745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createWarranty -->
+      </class> <!-- CloseoutPro.NotConnect.WarrantyTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
