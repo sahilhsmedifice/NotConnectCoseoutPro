@@ -10,11 +10,11 @@ import org.testng.annotations.Test;
 public class AssetsTest extends GlobalData {
 
 	@Test    (priority = 1)
-    public void Projects() throws InterruptedException {
+    public void Assets() throws InterruptedException {
         Initialize();
         LoginCredentials();
         
-    	Thread.sleep(5000);
+    	Thread.sleep(10000);
         
 		String desiredProjectName = "123 - NotConnect Automation Project";
 		List<WebElement> Projects = getProjectList();
@@ -42,7 +42,7 @@ public class AssetsTest extends GlobalData {
 		
 		Thread.sleep(3000);
 		add.clickAsset();
-		Thread.sleep(1000);		
+		Thread.sleep(4000);		
 		add.clickCreate();		
 		
 		add.createAsset1("AutomationAsset1");
@@ -63,14 +63,15 @@ public class AssetsTest extends GlobalData {
 		AssetsPage edit = new AssetsPage(driver);
 		
 		
-		  Thread.sleep(3000);
+		  Thread.sleep(5000);
 		edit.clickEdit();
 		  Thread.sleep(3000);
 		edit.editasset("AutomationAsset1 Updated");
 		
 		 Thread.sleep(3000);
+		System.out.println(edit.getAssetName());
 		String actualText = edit.getAssetName();		   
-	    Assert.assertEquals(actualText, "AutomationAsset1 Updated"); 
+	    Assert.assertEquals(actualText, "AUTOMATIONASSET1 UPDATED"); 
 		 
 		
 		

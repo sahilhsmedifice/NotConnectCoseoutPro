@@ -22,18 +22,13 @@ public class specificationPage {
 	By specBtn = By.id("menu13");
 	By adBtn = By.id("add_btn");
 	By divisions = By.xpath("//select[@formcontrolname='divisionNumber']");
-	
-	By general = By.xpath("//option[@value='01']");
-	
+	By general = By.xpath("//option[@value='01']");	
 	By specNum = By.xpath("//input[@placeholder='Specification number']");
 	By specName = By.xpath("//input[@placeholder='Specification description']");
 	By subBtn = By.xpath("//button[.='Submit']");
-	
-	
-	
+			
 	public void addSpecification(String numb,String nam ) {
-		
-		
+				
 		driver.findElement(specBtn).click();
 		driver.findElement(adBtn).click();
 		driver.findElement(divisions).click();
@@ -41,15 +36,36 @@ public class specificationPage {
 		driver.findElement(specNum).sendKeys(numb);
 		driver.findElement(specName).sendKeys(nam);
 		driver.findElement(subBtn).click();
-		
-		
-		
-		
-		
+				 
 	}
 	
+	 
 	
 	
+	
+	// Upload attachment
+	
+	
+	By expandspec = By.xpath("//span[.=' Division-01 General Requirements ']");
+	By uploadicon = By.cssSelector(".fa.fa-upload.text-primary");
+	By datefield = By.id("setdate");
+	By change = By.xpath("//span[.='›']");
+	By selectdate = By.xpath("(//td[.='1'])[1]");
+	
+	public void uploadspec() {
+		driver.findElement(expandspec).click();
+		driver.findElement(uploadicon).click();
+		driver.findElement(datefield).click();
+		driver.findElement(change).click();
+		driver.findElement(selectdate).click();
+	}
+	
+	 
+	By sevepec = By.xpath("//button[.='Save']");
+	
+	public void clickSave() {	 
+		driver.findElement(sevepec).click();
+	}
 	
 	
 	

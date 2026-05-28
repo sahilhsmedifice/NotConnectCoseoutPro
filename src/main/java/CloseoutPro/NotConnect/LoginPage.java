@@ -37,7 +37,7 @@ public class LoginPage {
 	   	 }
 	   	 
 	
-	   By errorMessage = By.cssSelector(".btn.btn-primary.login-btn.btn-error");
+	   By errorMessage = By.cssSelector(".error_message.text-center.ng-star-inserted");
 	   	public String getValidationMessage() {
 	        return driver.findElement(errorMessage).getText();
 	    }

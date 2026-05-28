@@ -1,6 +1,7 @@
 package CloseoutPro.NotConnect;
  
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class MyProfileTest extends GlobalData{
@@ -10,6 +11,9 @@ public class MyProfileTest extends GlobalData{
 		
 		Initialize();
 		LoginCredentials();
+			 
+		Thread.sleep(3000);
+		
 		ProfileDropdown();
 		 
 		MyProfilePage profile = new MyProfilePage(driver);
@@ -35,15 +39,21 @@ public class MyProfileTest extends GlobalData{
 		
 		Thread.sleep(1000);
 		password.changePasswordBtn();
-		password.enterCurrentPassword("Test@12345");
+		password.enterCurrentPassword("Test@1234565");
 		password.enterNewPassword("Test@1234");
 		password.enterConfirmPassword("Test@1234");		
 		
 		password.changePassword();
 		Thread.sleep(500);
 		System.out.println( driver.findElement(By.id("swal2-title")).getText()  );
+				 
+	
+		String passwordvalidate = password.getPasswordValidation();
+		Assert.assertEquals(passwordvalidate, "Current Password does not match!");
 		
-		 
+		
+	
+	
 	}
 	
 	

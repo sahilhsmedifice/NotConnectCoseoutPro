@@ -16,33 +16,34 @@ public class UserDirectoryTest extends GlobalData {
 	 
 	
     @Test(priority = 1)
-    public void UserDirectary() {
+    public void UserDirectary() throws InterruptedException {
         Initialize();
         LoginCredentials();
+        Thread.sleep(3000);
         ProfileDropdown();
     }
+    
 
-    @Test   (enabled = false)                  //  (priority = 2)
+    @Test          (priority = 2)
     public void CreateUser() throws InterruptedException {
     	
     	UserDirectoryPage add = new UserDirectoryPage(driver);
     	   	 
-    	add.clickDirectary(); // Optional
-         ProfileDropdown();
-         Thread.sleep(5000);
-         add.addUser("sahil", "sahil@hsmedifice.com", "developer");
+    	add.clickDirectary();  
+         ProfileDropdown();         // use for close dropdown
+         Thread.sleep(5000);     
+         add.addUser("User-Test", "sahil.hsmedifice@gmail.com", "QA-1");
     }
 
     
-    @Test       (enabled = false)                        //       (priority = 2)
+    @Test     (priority = 3)
     public void editUser() throws InterruptedException {
     	
     	UserDirectoryPage edit = new UserDirectoryPage(driver);
-    //	edit.clickDirectary();  // check once
-        Thread.sleep(1000);
-        ProfileDropdown();    // use for close
+  
+        Thread.sleep(5000);    
         
-        String desiredUserName = "ayushi zodape";
+        String desiredUserName = "User-Test";
         List<WebElement> users = edit.getUsersList();
 
         for (WebElement u : users) {
@@ -58,8 +59,8 @@ public class UserDirectoryTest extends GlobalData {
             }            
         }
         
-        driver.findElement(By.xpath("//input[@placeholder='Full Name *']")).clear();     
-        edit.enterEditDetails("Sahil Chauhan", "Test User");
+     
+        edit.enterEditDetails("User-Test Updates", "QA-2");
               
     }
  
@@ -69,15 +70,15 @@ public class UserDirectoryTest extends GlobalData {
     
     
     
-    @Test    (priority = 2)
+    @Test    (priority = 4)
     public void deleteUser() throws InterruptedException {
     	UserDirectoryPage delete = new UserDirectoryPage(driver);
-    	delete.clickDirectary();
-        Thread.sleep(1000);
-        ProfileDropdown();    // use for close
+     
+        Thread.sleep(4000);
         
         
-        String desiredUserName = "Meherdip Thosar";
+        
+        String desiredUserName = "User-Test Updates";
         List<WebElement> users = delete.getUsersList();
 
         for (WebElement u : users) {
@@ -91,7 +92,7 @@ public class UserDirectoryTest extends GlobalData {
                 break;  
             }            
         }
-  //      delete.deleteUser();
+        delete.deleteUser();
               
     }
     

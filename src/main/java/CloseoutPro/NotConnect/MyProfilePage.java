@@ -86,6 +86,11 @@ public class MyProfilePage {
 	}
 	
 	
+	 By passwordvalidaation = By.id("swal2-title");
+
+	 public String getPasswordValidation() {
+	     return driver.findElement(passwordvalidaation).getText();
+	 }
 	
 	
 	

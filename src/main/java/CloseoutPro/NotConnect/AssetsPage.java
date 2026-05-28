@@ -25,7 +25,7 @@ public class AssetsPage {
 	}
      
 	
-	By createbtn = By.xpath("//span[.='Create Asset ']");	
+	By createbtn = By.xpath("//span[.='Create']");	
 		
 	public void clickCreate() {
 		driver.findElement(createbtn).click();
@@ -41,16 +41,21 @@ public class AssetsPage {
 	
 	
 	
-	public void createAsset1(String name) {
+	public void createAsset1(String name) throws InterruptedException {
 				 
 		driver.findElement(assetname).sendKeys(name);
 		
 		 Select select = new Select(driver.findElement(duration));
+		 Thread.sleep(1000);
 		 select.selectByIndex(1); 
 		
+		 Thread.sleep(1000);
 		 driver.findElement(linkcloseout).click();
+		 Thread.sleep(1000);
 		 driver.findElement(warranties).click();
+		 Thread.sleep(1000);
 		 driver.findElement(selectitem).click();
+		 Thread.sleep(1000);
 		 driver.findElement(linkcloseout).click();
 		 
 		 			 

@@ -38,12 +38,12 @@ public class CloseoutTest extends GlobalData{
 	
 	
     @Test    (priority = 1)
-    public void Projects() throws InterruptedException {
+    public void CloseoutItem() throws InterruptedException {
         Initialize();
         LoginCredentials();
+         
         
-        
-        Thread.sleep(5000);
+        Thread.sleep(10000);
 		String desiredProjectName = "123 - NotConnect Automation Project";
 		List<WebElement> Projects = getProjectList();
 
@@ -63,30 +63,29 @@ public class CloseoutTest extends GlobalData{
     
     
         
-//		@Test  (priority = 2)
-//		public void createCloseout() throws InterruptedException {
-//
-//			CloseoutPage add = new CloseoutPage(driver);
-//  
-//			add.clickCloseout();
-//			// enter name and spec
-//			add.enterNameWithSpec("Automation Closeout 1");
-//			add.submitTypeAndDate();
-//					
-//			
-//		}
+		@Test  (priority = 2)
+		public void createCloseout() throws InterruptedException {
+
+			CloseoutPage add = new CloseoutPage(driver);
+  
+			Thread.sleep(3000);
+			add.clickCloseout();
+			// enter name and spec
+			add.enterNameWithSpec("Automation Closeout 1");
+			add.submitTypeAndDate();
+					
+			
+		}
 		
 		
 		
-		@Test    (priority = 2)
+		@Test    (priority = 3)
 		public void ApproveCloseout() throws InterruptedException, AWTException {
 			 
 			CloseoutPage status = new CloseoutPage(driver);
 			 
-			Thread.sleep(30000);
-			status.clickCloseout();                                  // comment code while integrate all classes
-
-			Thread.sleep(4000);
+			Thread.sleep(5000);
+			 
 			String desiredCloseoutName = "Automation Closeout 1";                             // always check name add and edit should same
 			List<WebElement> closeouts = status.getCloseoutList();
 
@@ -106,7 +105,7 @@ public class CloseoutTest extends GlobalData{
 		    // 🔽 Small scroll down (adjust value if needed)
 		    ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 200);");
 
-		    Thread.sleep(1000);
+		    Thread.sleep(3000);
  			
 		    driver.findElement(By.xpath("//button[.='Choose Files']")).click();
 
@@ -146,20 +145,21 @@ public class CloseoutTest extends GlobalData{
 		   
 		    Assert.assertEquals(actualText, "Approved");  
 		    		 	
+		    Thread.sleep(3000);
 		}
 		
 	 
 		
 		
 		
-		@Test(priority = 3)
+		@Test(priority = 4)
 		public void RejectCloseout() throws InterruptedException {
 		
 			 CloseoutPage reject = new CloseoutPage(driver);
 		
 		      reject.clickReject();
 		
-			 Thread.sleep(3000);
+			 Thread.sleep(5000);
 			 
 			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			 
@@ -173,7 +173,7 @@ public class CloseoutTest extends GlobalData{
 		}
 		
 		
-		@Test (priority = 4)
+		@Test (priority = 5)
 		public void Comments() throws InterruptedException {
 			
 			CloseoutPage comment = new CloseoutPage(driver);
@@ -182,8 +182,7 @@ public class CloseoutTest extends GlobalData{
 			// need to add implicit wait till 
 			Thread.sleep(1000);
 			System.out.println(driver.findElement(By.cssSelector(".swal2-title")).getText());
-			
-			
+			 
 //			getCommentValidation
 			 
 			String actualText2 = comment.getTooltipValidation();
@@ -195,34 +194,44 @@ public class CloseoutTest extends GlobalData{
 		
 	
 		@Test(priority = 6)
-		public void UpdateStatus() throws InterruptedException {
+		public void UpdateCloseout() throws InterruptedException {
 
 		    CloseoutPage edit = new CloseoutPage(driver);
-		    Thread.sleep(3000);
+		    Thread.sleep(5000);
  // add scroll up
 		    ((JavascriptExecutor) driver).executeScript("window.scrollTo(0, 0);");
 		    Thread.sleep(1000);
  
 			edit.enterItemAndDescription("Automation Closeout 1-Updated", "Description Testing ");			
-			Thread.sleep(2000);				    
+			Thread.sleep(1000);				    
 		    		    
 			System.out.println(driver.findElement(By.cssSelector(".swal2-title")).getText());			
 			String actualText2 = edit.getTooltipValidation();
 			Assert.assertEquals(actualText2, "Closeout Item Updated Successfully.");
 				  					
-			
+			Thread.sleep(5000);
 		}
 		
 		
-//		@Test  (priority = 7)
-//		public void deleteRestoreCloseout() {
-//			
-//			  CloseoutPage restore = new CloseoutPage(driver);
-//			
-//			
-//			
-//			
-//		}
+		@Test  (priority = 7)
+		public void deleteRestoreCloseout() throws InterruptedException {
+			
+			  CloseoutPage restore = new CloseoutPage(driver);
+			
+			restore.deleteCloseout();
+			Thread.sleep(5000);
+			
+			restore.archiveCloseout();
+			Thread.sleep(1000);
+			System.out.println(driver.findElement(By.cssSelector(".swal2-title")).getText());			
+			String actualText3 = restore.getTooltipValidation();
+			Assert.assertEquals(actualText3, "Closeout Item Restored Successfully.");
+			
+			
+		 
+			
+			
+		}
 		
 		
 		

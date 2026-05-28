@@ -132,14 +132,7 @@ public class CloseoutPage {
 	 }
 	 
 	 
-	 
-	
-	
-	
-	
-	
-	
-	
+	  
 	
 	
 	// Update Closeout
@@ -168,7 +161,31 @@ public class CloseoutPage {
 	
 	
 	
-	 
+	 // delete and restore closeout item
+	
+	By deletebtn = By.xpath("//button[.='Delete']");
+	By deleteyes = By.xpath("//button[.='Yes, delete it!']");
+	
+	By archivepage = By.xpath("//a[.='Archived Items']");	
+	By restoreclick = By.xpath("//a[@title='Restore']");
+	
+	
+	public void deleteCloseout() {
+		driver.findElement(deletebtn).click();
+		driver.findElement(deleteyes).click();
+	}
+	
+	public void archiveCloseout() {
+		driver.findElement(archivepage).click();
+		driver.findElement(restoreclick).click();
+	}
+	
+	
+	
+	
+	
+	
+	
 
 	
 	

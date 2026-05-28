@@ -74,30 +74,29 @@ public class ProjectsPage {
 	 
 	 
 	 
-// permanent delete	 
+// restore project	 
 	 
 	 
-	 By archive = By.xpath("//span[.='Archived']");
-//	 By restore = By.xpath("(//i[@class='fa fa-refresh text-primary'])[2]");
-//	 By resConfirm = By.cssSelector(".swal2-confirm.swal2-styled");\
-	 
-	 By DeleteConfirm  = By.xpath("//button[.='Yes']");
-	 
+	 By archive = By.xpath("//span[.='Archived']");	 
+	 By restoreConfirm  = By.xpath("//button[.='Yes']");	 
 	 
 	 public void archiveClick () {
 		driver.findElement(archive).click();
- 
+	 }
+	 	 
+	 public void restoreProject() {		
+		 driver.findElement(restoreConfirm).click();
 	 }
 	 
 	 
-	 public void permanentDelete() {
-		 driver.findElement(DeleteConfirm).click();
+
+	 // assertion 
+	 
+	 By restorevalidate = By.cssSelector(".swal2-title");
+
+	 public String getRestoreValidation() {
+	     return driver.findElement(restorevalidate).getText();
 	 }
-	 
-	 
-	 
-	 
-	  
 	 
 	 
 	 

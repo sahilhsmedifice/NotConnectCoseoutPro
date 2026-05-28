@@ -1,5 +1,10 @@
 package CloseoutPro.NotConnect;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -12,15 +17,12 @@ public class specificationTest extends GlobalData {
 	
 	
 	  @Test    (priority = 1)
-	    public void Projects() {
+	    public void Specifications() throws InterruptedException {
 	        Initialize();
 	        LoginCredentials();
-	    }
-		
-	    @Test     (priority=2)            // (priority=2)     //  (enabled=false)
-	    public void getProject() throws InterruptedException {
-	      
-	    	Thread.sleep(2000);  
+	   
+	      	Thread.sleep(10000);  
+	      	
 	        String desiredProjectName = "123 - NotConnect Automation Project";
 	        List<WebElement> Projects =  getProjectList();
 
@@ -40,44 +42,64 @@ public class specificationTest extends GlobalData {
 	   }
 	    
 
-	    @Test   (priority=3) 
+	    @Test  (priority=2) 
 	    public void AddSpecification() {
 	    	
 	    	specificationPage add = new specificationPage(driver);	    	
 	    	add.addSpecification("1234", "Test Spec");	    	
-	    	
+	    	 
 	    }
 	    
 	    
-//	    
-//	    @Test     (priority=4) 
-//	    public void EditSpecification() {
-//	    
-//	    
-//	    	//.......code
-//	    
-//	    }
-//	    
-//	    
-//	    
-//	    
-//	    
-//	    
-//	    
-//	    
-//	    @Test  (priority=5) 
-//	    public void uplaodSpecification() {
-//	    	
-//	    	
-//	    	//.......code
-//	    	
-//	    	
-//	    	
-//	    }
-//	    
+	    
+	    @Test     (priority=3) 
+	    public void UploadSpecification() throws InterruptedException, AWTException {
+	  	
+	    	specificationPage upload = new specificationPage(driver);	
+	    	    	
+	    Thread.sleep(4000);	
+	    	 
+	    	upload.uploadspec();
+	    		    	     	
+          Thread.sleep(2000);
+ 			
+		    driver.findElement(By.xpath("//ngx-dropzone-label[.='Drag and Drop']")).click();
+
+		 //  Wait properly (popup needs time)
+		 Thread.sleep(3000);
+
+		 // Bring focus to file dialog (VERY IMPORTANT)
+		 Robot robot = new Robot();
+		 robot.delay(1000);
+
+		 // copy file path
+		 StringSelection file = new StringSelection("C:\\File Types\\spec 03 mcel pob.pdf");
+		 Toolkit.getDefaultToolkit().getSystemClipboard().setContents(file, null);
+
+		 // CTRL + V (paste)
+		 robot.keyPress(KeyEvent.VK_CONTROL);
+		 robot.keyPress(KeyEvent.VK_V);
+
+		 robot.keyRelease(KeyEvent.VK_V);
+		 robot.keyRelease(KeyEvent.VK_CONTROL);
+
+		 // small delay before enter
+		 robot.delay(1000);
+
+		 // press ENTER
+		 robot.keyPress(KeyEvent.VK_ENTER);
+		 robot.keyRelease(KeyEvent.VK_ENTER);
+		 
+		 Thread.sleep(3000);
+	    	    
+		 upload.clickSave();
+		  
+	    }
 	    
 	    
 	    
+	    
+	     
 	    
 	    
 	    

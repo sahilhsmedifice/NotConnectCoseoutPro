@@ -37,7 +37,7 @@ public class LoginTest extends GlobalData {
 	public void WrongPassword() throws InterruptedException{
 		
 		LoginPage login = new LoginPage(driver);
-	    Thread.sleep(1000);
+	    Thread.sleep(2000);
 		login.Login("neeleshwari.mule@hsmedifice.com", "Neel@2905");
 	 
 		
@@ -52,11 +52,10 @@ public class LoginTest extends GlobalData {
 	@Test  (priority = 3)
 	public void ValidCredentials() throws InterruptedException {	
 		LoginPage login = new LoginPage(driver);
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		login.Login("neeleshwari.mule@hsmedifice.com", "Neel@290501");
 		
-		System.out.println(login.getProjectList());
-		 
+		System.out.println(login.getProjectList());		 
 	     Assert.assertEquals(login.getProjectList().trim(),"PROJECTS");	     
 	     
 	  driver.close();

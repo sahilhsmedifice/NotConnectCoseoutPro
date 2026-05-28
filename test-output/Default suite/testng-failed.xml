@@ -3,12 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="CloseoutPro.NotConnect.WarrantyTest">
+      <class name="CloseoutPro.NotConnect.SettingTest">
         <methods>
-          <include name="createWarranty"/>
-          <include name="selectProject"/>
+          <include name="createCloseoutType"/>
+          <include name="updatePhase"/>
+          <include name="createPhase"/>
+          <include name="deleteCloseoutType"/>
+          <include name="Settings"/>
+          <include name="deletePhase"/>
+          <include name="upadteCloseoutType"/>
         </methods>
-      </class> <!-- CloseoutPro.NotConnect.WarrantyTest -->
+      </class> <!-- CloseoutPro.NotConnect.SettingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

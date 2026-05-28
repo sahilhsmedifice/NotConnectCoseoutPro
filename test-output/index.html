@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Laptop\AppData\Local\Temp\testng-eclipse-359486261\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Laptop\eclipse-workspace\NotConnect\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,26 +92,225 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">40 methods, 2 failed,   38 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.CloseoutTest" class="method navigator-link" hash-for-method="ApproveCloseout">ApproveCloseout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.CloseoutTest" class="method navigator-link" hash-for-method="RejectCloseout">RejectCloseout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="createWarranty">createWarranty</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.specificationTest" class="method navigator-link" hash-for-method="AddSpecification">AddSpecification</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="selectProject">selectProject</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.AssetsTest" class="method navigator-link" hash-for-method="Assets">Assets</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.MyProfileTest" class="method navigator-link" hash-for-method="ChangePassword">ChangePassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.CloseoutTest" class="method navigator-link" hash-for-method="CloseoutItem">CloseoutItem</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.CloseoutTest" class="method navigator-link" hash-for-method="Comments">Comments</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.UserDirectoryTest" class="method navigator-link" hash-for-method="CreateUser">CreateUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.MyProfileTest" class="method navigator-link" hash-for-method="EditProfile">EditProfile</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.ProjectsTest" class="method navigator-link" hash-for-method="Projects">Projects</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.ProjectsTest" class="method navigator-link" hash-for-method="RestoreProject">RestoreProject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.SettingTest" class="method navigator-link" hash-for-method="Settings">Settings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.specificationTest" class="method navigator-link" hash-for-method="Specifications">Specifications</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="SuspendResumeTicket">SuspendResumeTicket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.CloseoutTest" class="method navigator-link" hash-for-method="UpdateCloseout">UpdateCloseout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="UpdateWarranty">UpdateWarranty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.specificationTest" class="method navigator-link" hash-for-method="UploadSpecification">UploadSpecification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.UserDirectoryTest" class="method navigator-link" hash-for-method="UserDirectary">UserDirectary</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.LoginTest" class="method navigator-link" hash-for-method="ValidCredentials">ValidCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="WarrantyTicket">WarrantyTicket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.LoginTest" class="method navigator-link" hash-for-method="WrongEmail">WrongEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.LoginTest" class="method navigator-link" hash-for-method="WrongPassword">WrongPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="closeWarrantyTicket">closeWarrantyTicket</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.AssetsTest" class="method navigator-link" hash-for-method="createAsset">createAsset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.CloseoutTest" class="method navigator-link" hash-for-method="createCloseout">createCloseout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.SettingTest" class="method navigator-link" hash-for-method="createCloseoutType">createCloseoutType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.SettingTest" class="method navigator-link" hash-for-method="createPhase">createPhase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.ProjectsTest" class="method navigator-link" hash-for-method="createProject">createProject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="createWarranty">createWarranty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.ProjectsTest" class="method navigator-link" hash-for-method="delete">delete</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.SettingTest" class="method navigator-link" hash-for-method="deleteCloseoutType">deleteCloseoutType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.SettingTest" class="method navigator-link" hash-for-method="deletePhase">deletePhase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.CloseoutTest" class="method navigator-link" hash-for-method="deleteRestoreCloseout">deleteRestoreCloseout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.UserDirectoryTest" class="method navigator-link" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.WarrantyTest" class="method navigator-link" hash-for-method="deleteWarranty">deleteWarranty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.AssetsTest" class="method navigator-link" hash-for-method="editAsset">editAsset</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.ProjectsTest" class="method navigator-link" hash-for-method="editProject">editProject</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.UserDirectoryTest" class="method navigator-link" hash-for-method="editUser">editUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.SettingTest" class="method navigator-link" hash-for-method="upadteCloseoutType">upadteCloseoutType</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="CloseoutPro.NotConnect.SettingTest" class="method navigator-link" hash-for-method="updatePhase">updatePhase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -122,13 +321,329 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.CloseoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ApproveCloseout">
+                  </a> <!-- ApproveCloseout -->
+                  <span class="method-name">ApproveCloseout</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.chip.Approved&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8b0b51e21526155220d69c590937ab6, findElement {value=.chip.Approved, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, goog:processID: 22532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8b0b51e21526155220d69c590937ab6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at CloseoutPro.NotConnect.CloseoutPage.getApproveStatus(CloseoutPage.java:89)
+	at CloseoutPro.NotConnect.CloseoutTest.ApproveCloseout(CloseoutTest.java:142)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RejectCloseout">
+                  </a> <!-- RejectCloseout -->
+                  <span class="method-name">RejectCloseout</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@mattooltip=&apos;Reject&apos;]&quot;}
+  (Session info: chrome=148.0.7778.179)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e8b0b51e21526155220d69c590937ab6, findElement {value=//span[@mattooltip=&apos;Reject&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, goog:processID: 22532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e8b0b51e21526155220d69c590937ab6
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at CloseoutPro.NotConnect.CloseoutPage.clickReject(CloseoutPage.java:99)
+	at CloseoutPro.NotConnect.CloseoutTest.RejectCloseout(CloseoutTest.java:160)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.AssetsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Assets">
+                  </a> <!-- Assets -->
+                  <span class="method-name">Assets</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAsset">
+                  </a> <!-- createAsset -->
+                  <span class="method-name">createAsset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editAsset">
+                  </a> <!-- editAsset -->
+                  <span class="method-name">editAsset</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.MyProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChangePassword">
+                  </a> <!-- ChangePassword -->
+                  <span class="method-name">ChangePassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="EditProfile">
+                  </a> <!-- EditProfile -->
+                  <span class="method-name">EditProfile</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.SettingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Settings">
+                  </a> <!-- Settings -->
+                  <span class="method-name">Settings</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCloseoutType">
+                  </a> <!-- createCloseoutType -->
+                  <span class="method-name">createCloseoutType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createPhase">
+                  </a> <!-- createPhase -->
+                  <span class="method-name">createPhase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteCloseoutType">
+                  </a> <!-- deleteCloseoutType -->
+                  <span class="method-name">deleteCloseoutType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deletePhase">
+                  </a> <!-- deletePhase -->
+                  <span class="method-name">deletePhase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="upadteCloseoutType">
+                  </a> <!-- upadteCloseoutType -->
+                  <span class="method-name">upadteCloseoutType</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updatePhase">
+                  </a> <!-- updatePhase -->
+                  <span class="method-name">updatePhase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.UserDirectoryTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateUser">
+                  </a> <!-- CreateUser -->
+                  <span class="method-name">CreateUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserDirectary">
+                  </a> <!-- UserDirectary -->
+                  <span class="method-name">UserDirectary</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editUser">
+                  </a> <!-- editUser -->
+                  <span class="method-name">editUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.CloseoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CloseoutItem">
+                  </a> <!-- CloseoutItem -->
+                  <span class="method-name">CloseoutItem</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Comments">
+                  </a> <!-- Comments -->
+                  <span class="method-name">Comments</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateCloseout">
+                  </a> <!-- UpdateCloseout -->
+                  <span class="method-name">UpdateCloseout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createCloseout">
+                  </a> <!-- createCloseout -->
+                  <span class="method-name">createCloseout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteRestoreCloseout">
+                  </a> <!-- deleteRestoreCloseout -->
+                  <span class="method-name">deleteRestoreCloseout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ValidCredentials">
+                  </a> <!-- ValidCredentials -->
+                  <span class="method-name">ValidCredentials</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WrongEmail">
+                  </a> <!-- WrongEmail -->
+                  <span class="method-name">WrongEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WrongPassword">
+                  </a> <!-- WrongPassword -->
+                  <span class="method-name">WrongPassword</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">CloseoutPro.NotConnect.WarrantyTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SuspendResumeTicket">
+                  </a> <!-- SuspendResumeTicket -->
+                  <span class="method-name">SuspendResumeTicket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UpdateWarranty">
+                  </a> <!-- UpdateWarranty -->
+                  <span class="method-name">UpdateWarranty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WarrantyTicket">
+                  </a> <!-- WarrantyTicket -->
+                  <span class="method-name">WarrantyTicket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeWarrantyTicket">
+                  </a> <!-- closeWarrantyTicket -->
+                  <span class="method-name">closeWarrantyTicket</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="createWarranty">
@@ -138,112 +653,524 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="selectProject">
-                  </a> <!-- selectProject -->
-                  <span class="method-name">selectProject</span>
+                  <a name="deleteWarranty">
+                  </a> <!-- deleteWarranty -->
+                  <span class="method-name">deleteWarranty</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.specificationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddSpecification">
+                  </a> <!-- AddSpecification -->
+                  <span class="method-name">AddSpecification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Specifications">
+                  </a> <!-- Specifications -->
+                  <span class="method-name">Specifications</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UploadSpecification">
+                  </a> <!-- UploadSpecification -->
+                  <span class="method-name">UploadSpecification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CloseoutPro.NotConnect.ProjectsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Projects">
+                  </a> <!-- Projects -->
+                  <span class="method-name">Projects</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="RestoreProject">
+                  </a> <!-- RestoreProject -->
+                  <span class="method-name">RestoreProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createProject">
+                  </a> <!-- createProject -->
+                  <span class="method-name">createProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="delete">
+                  </a> <!-- delete -->
+                  <span class="method-name">delete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editProject">
+                  </a> <!-- editProject -->
+                  <span class="method-name">editProject</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Laptop\AppData\Local\Temp\testng-eclipse-359486261\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Laptop\eclipse-workspace\NotConnect\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.LoginTest&quot;/&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.MyProfileTest&quot;/&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.UserDirectoryTest&quot;/&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.ProjectsTest&quot;/&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.specificationTest&quot;/&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.CloseoutTest&quot;/&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.AssetsTest&quot;/&gt;
       &lt;class name=&quot;CloseoutPro.NotConnect.WarrantyTest&quot;/&gt;
+      &lt;class name=&quot;CloseoutPro.NotConnect.SettingTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (9 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(40);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createWarranty')
 data.setCell(0, 2, 'CloseoutPro.NotConnect.WarrantyTest')
-data.setCell(0, 3, 265745);
+data.setCell(0, 3, 298413);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'selectProject')
-data.setCell(1, 2, 'CloseoutPro.NotConnect.WarrantyTest')
-data.setCell(1, 3, 30190);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 'Specifications')
+data.setCell(1, 2, 'CloseoutPro.NotConnect.specificationTest')
+data.setCell(1, 3, 54155);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'UserDirectary')
+data.setCell(2, 2, 'CloseoutPro.NotConnect.UserDirectoryTest')
+data.setCell(2, 3, 46576);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Assets')
+data.setCell(3, 2, 'CloseoutPro.NotConnect.AssetsTest')
+data.setCell(3, 3, 40901);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Settings')
+data.setCell(4, 2, 'CloseoutPro.NotConnect.SettingTest')
+data.setCell(4, 3, 40610);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'WarrantyTicket')
+data.setCell(5, 2, 'CloseoutPro.NotConnect.WarrantyTest')
+data.setCell(5, 3, 38360);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'CloseoutItem')
+data.setCell(6, 2, 'CloseoutPro.NotConnect.CloseoutTest')
+data.setCell(6, 3, 36664);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Projects')
+data.setCell(7, 2, 'CloseoutPro.NotConnect.ProjectsTest')
+data.setCell(7, 3, 31774);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'EditProfile')
+data.setCell(8, 2, 'CloseoutPro.NotConnect.MyProfileTest')
+data.setCell(8, 3, 31416);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'ApproveCloseout')
+data.setCell(9, 2, 'CloseoutPro.NotConnect.CloseoutTest')
+data.setCell(9, 3, 30000);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'WrongEmail')
+data.setCell(10, 2, 'CloseoutPro.NotConnect.LoginTest')
+data.setCell(10, 3, 29681);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'createAsset')
+data.setCell(11, 2, 'CloseoutPro.NotConnect.AssetsTest')
+data.setCell(11, 3, 25081);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'UpdateWarranty')
+data.setCell(12, 2, 'CloseoutPro.NotConnect.WarrantyTest')
+data.setCell(12, 3, 21510);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'createPhase')
+data.setCell(13, 2, 'CloseoutPro.NotConnect.SettingTest')
+data.setCell(13, 3, 18445);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'editProject')
+data.setCell(14, 2, 'CloseoutPro.NotConnect.ProjectsTest')
+data.setCell(14, 3, 17856);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'UploadSpecification')
+data.setCell(15, 2, 'CloseoutPro.NotConnect.specificationTest')
+data.setCell(15, 3, 16999);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'editAsset')
+data.setCell(16, 2, 'CloseoutPro.NotConnect.AssetsTest')
+data.setCell(16, 3, 14690);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'UpdateCloseout')
+data.setCell(17, 2, 'CloseoutPro.NotConnect.CloseoutTest')
+data.setCell(17, 3, 13725);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'RestoreProject')
+data.setCell(18, 2, 'CloseoutPro.NotConnect.ProjectsTest')
+data.setCell(18, 3, 13381);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'closeWarrantyTicket')
+data.setCell(19, 2, 'CloseoutPro.NotConnect.WarrantyTest')
+data.setCell(19, 3, 12988);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'deleteWarranty')
+data.setCell(20, 2, 'CloseoutPro.NotConnect.WarrantyTest')
+data.setCell(20, 3, 10850);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'RejectCloseout')
+data.setCell(21, 2, 'CloseoutPro.NotConnect.CloseoutTest')
+data.setCell(21, 3, 10048);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'createCloseoutType')
+data.setCell(22, 2, 'CloseoutPro.NotConnect.SettingTest')
+data.setCell(22, 3, 9861);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'ValidCredentials')
+data.setCell(23, 2, 'CloseoutPro.NotConnect.LoginTest')
+data.setCell(23, 3, 9107);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'SuspendResumeTicket')
+data.setCell(24, 2, 'CloseoutPro.NotConnect.WarrantyTest')
+data.setCell(24, 3, 8892);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'createCloseout')
+data.setCell(25, 2, 'CloseoutPro.NotConnect.CloseoutTest')
+data.setCell(25, 3, 7607);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Comments')
+data.setCell(26, 2, 'CloseoutPro.NotConnect.CloseoutTest')
+data.setCell(26, 3, 7388);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'upadteCloseoutType')
+data.setCell(27, 2, 'CloseoutPro.NotConnect.SettingTest')
+data.setCell(27, 3, 6944);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'deleteRestoreCloseout')
+data.setCell(28, 2, 'CloseoutPro.NotConnect.CloseoutTest')
+data.setCell(28, 3, 6927);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'CreateUser')
+data.setCell(29, 2, 'CloseoutPro.NotConnect.UserDirectoryTest')
+data.setCell(29, 3, 6858);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'createProject')
+data.setCell(30, 2, 'CloseoutPro.NotConnect.ProjectsTest')
+data.setCell(30, 3, 6681);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'editUser')
+data.setCell(31, 2, 'CloseoutPro.NotConnect.UserDirectoryTest')
+data.setCell(31, 3, 6405);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'delete')
+data.setCell(32, 2, 'CloseoutPro.NotConnect.ProjectsTest')
+data.setCell(32, 3, 6131);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'WrongPassword')
+data.setCell(33, 2, 'CloseoutPro.NotConnect.LoginTest')
+data.setCell(33, 3, 5388);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'AddSpecification')
+data.setCell(34, 2, 'CloseoutPro.NotConnect.specificationTest')
+data.setCell(34, 3, 5166);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'deleteUser')
+data.setCell(35, 2, 'CloseoutPro.NotConnect.UserDirectoryTest')
+data.setCell(35, 3, 4607);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'updatePhase')
+data.setCell(36, 2, 'CloseoutPro.NotConnect.SettingTest')
+data.setCell(36, 3, 4444);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'deletePhase')
+data.setCell(37, 2, 'CloseoutPro.NotConnect.SettingTest')
+data.setCell(37, 3, 4248);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'deleteCloseoutType')
+data.setCell(38, 2, 'CloseoutPro.NotConnect.SettingTest')
+data.setCell(38, 3, 3984);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'ChangePassword')
+data.setCell(39, 2, 'CloseoutPro.NotConnect.MyProfileTest')
+data.setCell(39, 3, 3651);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 16 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">CloseoutPro.NotConnect.WarrantyTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">CloseoutPro.NotConnect.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">selectProject</span>
+                <span class="method-name">WrongEmail</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">WrongPassword</span>
+                <span class="method-start">29699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ValidCredentials</span>
+                <span class="method-start">35116 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.MyProfileTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">EditProfile</span>
+                <span class="method-start">44231 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ChangePassword</span>
+                <span class="method-start">75655 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.UserDirectoryTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">UserDirectary</span>
+                <span class="method-start">79307 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">CreateUser</span>
+                <span class="method-start">125889 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editUser</span>
+                <span class="method-start">132755 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser</span>
+                <span class="method-start">139170 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.ProjectsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Projects</span>
+                <span class="method-start">143778 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createProject</span>
+                <span class="method-start">175553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editProject</span>
+                <span class="method-start">182246 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">delete</span>
+                <span class="method-start">200120 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">RestoreProject</span>
+                <span class="method-start">206255 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.specificationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Specifications</span>
+                <span class="method-start">219637 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">AddSpecification</span>
+                <span class="method-start">273800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UploadSpecification</span>
+                <span class="method-start">278969 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.CloseoutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">CloseoutItem</span>
+                <span class="method-start">295971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCloseout</span>
+                <span class="method-start">332644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ApproveCloseout</span>
+                <span class="method-start">340258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">RejectCloseout</span>
+                <span class="method-start">370266 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Comments</span>
+                <span class="method-start">380317 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UpdateCloseout</span>
+                <span class="method-start">387708 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteRestoreCloseout</span>
+                <span class="method-start">401437 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.AssetsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Assets</span>
+                <span class="method-start">408365 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createAsset</span>
+                <span class="method-start">449270 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editAsset</span>
+                <span class="method-start">474354 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.WarrantyTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">WarrantyTicket</span>
+                <span class="method-start">489046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">createWarranty</span>
-                <span class="method-start">30197 ms</span>
+                <span class="method-start">527411 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UpdateWarranty</span>
+                <span class="method-start">825827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SuspendResumeTicket</span>
+                <span class="method-start">847338 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">closeWarrantyTicket</span>
+                <span class="method-start">856238 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteWarranty</span>
+                <span class="method-start">869228 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CloseoutPro.NotConnect.SettingTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Settings</span>
+                <span class="method-start">880079 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createCloseoutType</span>
+                <span class="method-start">920692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">upadteCloseoutType</span>
+                <span class="method-start">930555 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteCloseoutType</span>
+                <span class="method-start">937501 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">createPhase</span>
+                <span class="method-start">941487 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updatePhase</span>
+                <span class="method-start">959934 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deletePhase</span>
+                <span class="method-start">964379 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

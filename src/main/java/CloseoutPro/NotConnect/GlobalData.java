@@ -28,19 +28,17 @@ WebDriver driver;
 	
 	public void LoginCredentials() {	
 		LoginPage login = new LoginPage(driver);
-		login.Login("Neeleshwari.mule@hsmedifice.com", "Neel@290501");
-	 	
+		login.Login("Neeleshwari.mule@hsmedifice.com", "Neel@290501");		
+	 
+		driver.findElement(By.xpath("(//button[.=' Cancel '])[1]")).click();
 	}
 	
 	
 	
 	
-	public void selectCompany() {
-		
+	public void selectCompany() {		
 		driver.findElement(By.xpath("//label[.='HSM Contech']")).click();
-		driver.findElement(By.xpath("//button[.='Update ']")).click();
-		
-		 
+		driver.findElement(By.xpath("//button[.=' Update ']")).click();				 
 		
 	}
 	
@@ -73,13 +71,7 @@ WebDriver driver;
 	}
 	
 	
-
-	
-	
-	
-	
-	
-	
+ 
 	
 	
 	

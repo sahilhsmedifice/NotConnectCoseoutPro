@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ProjectsTest extends GlobalData {
@@ -17,22 +18,22 @@ public class ProjectsTest extends GlobalData {
         LoginCredentials();
     }
 	
-    @Test          (enabled=false)             //    (priority=2)     
+    @Test    (priority=2)     
     public void createProject() throws InterruptedException {
     	
     	ProjectsPage add = new ProjectsPage(driver);  
 
-    	Thread.sleep(3000);
+    	Thread.sleep(5000);
     	add.createProject("806524", "NotConnect Automation Project", "Nagpur");
     	 	
     }
     
     
-    @Test       (priority = 2)          //  (enabled=false)
+    @Test       (priority = 3)     
     public void editProject() throws InterruptedException {
         ProjectsPage edit = new ProjectsPage(driver);
 
-        Thread.sleep(3000);  
+        Thread.sleep(10000);  
         String desiredProjectName = "806524 - NotConnect Automation Project";
         List<WebElement> Projects = edit.getProjectList();
 
@@ -55,13 +56,13 @@ public class ProjectsTest extends GlobalData {
         
     }
 
-	@Test        (priority=3 )            //   (enabled=false)    //  (priority=4 )
+	@Test        (priority=4)            //   (enabled=false)    
     public void delete() throws InterruptedException {
     	
     	
 		ProjectsPage delete = new ProjectsPage(driver);
 		
-		Thread.sleep(3000);  
+		Thread.sleep(5000);  
         String desiredProjectName = "NotConnect Automation Project";
         List<WebElement> Projects = delete.getProjectList();
 
@@ -87,18 +88,19 @@ public class ProjectsTest extends GlobalData {
 	
 	
 	
-	// need to restore project, perform delete project action on last
+	 
     
-	@Test      (priority=4 )
-    public void permanentDelete() throws InterruptedException {
+	@Test      (priority=5 )
+    public void RestoreProject() throws InterruptedException {
     	
-		ProjectsPage Pdelete = new ProjectsPage(driver);
+		ProjectsPage restore = new ProjectsPage(driver);
 		
-		Pdelete.archiveClick();
+		Thread.sleep(2000);
+		restore.archiveClick();
 		
-		Thread.sleep(3000);  
+		Thread.sleep(5000);  
         String desiredProjectName = "NotConnect Automation Project";
-        List<WebElement> Projects = Pdelete.getProjectList();
+        List<WebElement> Projects = restore.getProjectList();
 
         for (int i = 0; i < Projects.size(); i++) {
             WebElement Project = Projects.get(i);
@@ -109,14 +111,23 @@ public class ProjectsTest extends GlobalData {
                 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", Project);
                 Thread.sleep(500);  
                 
-                Project.findElement(By.xpath("./div/div[3]/div[2]/a[3]")).click();
+                Project.findElement(By.xpath("./div/div[3]/div[2]/a[2]")).click();
                 break;
             }
         }
 				
-	//	Pdelete.permanentDelete();	
+        restore.restoreProject();	
 	 
-		
+        Thread.sleep(5000);
+
+        System.out.println(restore.getRestoreValidation());
+		String restorevalidate = restore.getRestoreValidation();
+		Assert.assertEquals(restorevalidate, "Restore!");
+        
+        
+        
+        
+        
     }
     
 

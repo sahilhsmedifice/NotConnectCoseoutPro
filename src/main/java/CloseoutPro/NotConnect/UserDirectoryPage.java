@@ -23,7 +23,7 @@ public class UserDirectoryPage {
     By Mail = By.xpath("//input[@formcontrolname='email']");
     By Title = By.xpath("//input[@formcontrolname='designation']");
     By dropdown = By.xpath("//select[@formcontrolname='roleId']");
-    By submit = By.cssSelector("//button[@class='btn-submit']");
+    By submit = By.xpath("//button[.=' Add ']");
     
     
     // Actions

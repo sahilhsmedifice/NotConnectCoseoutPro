@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.By.ByXPath;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -24,6 +25,17 @@ public class WarrantyPage {
 
     // ====== LOCATORS ======
     By Warrantticket = By.id("link8");
+        
+    By warrantyduration = By.xpath("//span[.='Select Warranty Duration']");
+    By selectduration = By.xpath("//div[.=' 2 Year ']");
+    By submit = By.xpath("(//button[.=' Update '])[3]");
+     
+    public void slelectWarrantyDuration() {
+    	 driver.findElement(warrantyduration).click();
+    	 driver.findElement(selectduration).click();
+    	 driver.findElement(submit).click();
+    }
+    
     By craetewarranty = By.xpath("//span[.='Create']");
 
     By title = By.xpath("//input[@name='title']");
@@ -169,12 +181,129 @@ public class WarrantyPage {
     
     
     
+  // update warranty 
     
+   By warranty1 = By.xpath("//div[.='automation warranty 1']");
     
+   public void getWarranty1() {
+	   driver.findElement(warranty1).click();
+   }
     
+   By editBtn = By.xpath("//button[.=' Edit ']");
+   
+   public void clickEdit() {
+	   driver.findElement(editBtn).click();
+   }
     
+   
+   By updatetitle = By.xpath("//input[@formcontrolname='title']");
+   
+   public void editTitle(String edittitle) {
+	   driver.findElement(updatetitle).clear();
+	   driver.findElement(updatetitle).sendKeys(edittitle);
+   }
+   
     
+   By updatebtn = By.xpath("//button[.=' Update Warranty ']");
+   
+   public void clickUpdateWarranty() {
+	   driver.findElement(updatebtn).click();
+   }
+   
     
+   
+   
+   // Suspend Resume Warranty 
+   
+   By suspendbtn = By.xpath("//span[.='Suspend Ticket']");
+   By next = By.xpath("//button[@style='display: inline-flex;']");
+   By select15 = By.xpath("//span[.='15']");
+   By ok = By.xpath("//button[.='OK']");
+   By yes = By.xpath("//button[.='Yes']");
+   
+   
+   public void suspendWarranty() {
+	  driver.findElement(suspendbtn).click();
+	  driver.findElement(next).click();
+	  driver.findElement(select15).click();
+	  driver.findElement(ok).click();
+	  driver.findElement(yes).click();
+   }
+   
+        
+   
+   By resumebtn = By.xpath("//button[.='Resume Ticket']");
+   By resumeyes = By.xpath("//button[.='Yes']");
+   
+   public void ResumeWarranty() {
+	   
+	   driver.findElement(resumebtn).click();
+	   driver.findElement(resumeyes).click();
+	   
+   }
+   
+   
+   
+   
+   
+   
+   // close warranty Ticket 
+   
+   
+   By closebtn = By.xpath("//button[.=' Close ']");
+   By closecomment = By.xpath("//textarea[@formcontrolname='closedComment']");
+   
+   
+   public void closeWarranty1(String comment) {
+	   driver.findElement(closebtn).click();
+	   driver.findElement(closecomment).sendKeys(comment);
+	   
+   }
+   
+   
+   By closewarranty = By.xpath("//button[.=' CLOSE WARRANTY ']");
+  
+   public void clickCloseWarranty() {
+	  driver.findElement(closewarranty).click(); 
+   }
+   
+   
+   
+   
+   // delete warranty 
+   
+   By deletebtn = By.xpath("//span[.=' Delete']");   
+   By yesdelete = By.xpath("//button[.='Yes, Delete it!']");
+   
+   public void deleteWarranty() {
+	   driver.findElement(deletebtn).click();
+	   driver.findElement(yesdelete).click();
+   }
+   
+   
+   By archive = By.xpath("//label[.='Archive']");
+   
+   public void clickArchive() {
+	   driver.findElement(archive).click();
+   }
+   
+   
+   By pdelete = By.xpath("//span[.='Delete']");  
+   By yesdelete2 = By.xpath("//button[.='Yes, Delete it!']");
+   
+   
+   public void permanentDeleteWarranty() {
+	   driver.findElement(pdelete).click();
+	   driver.findElement(yesdelete2).click();
+   }
+   
+   
+   
+   
+   
+   
+   
+   
     
     
     
