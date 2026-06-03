@@ -2,6 +2,7 @@ package CloseoutPro.NotConnect;
 
 
 import org.openqa.selenium.By;
+import utilities.RetryAnalyzer;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
@@ -12,7 +13,7 @@ public class LoginTest extends GlobalData {
 
 	
 	@Test (priority = 1)
-	public void WrongEmail(){	 
+	public void LoginWithWrongEmail(){	 
 		Initialize();	
 		LoginPage login = new LoginPage(driver);		
 		 login.Login("neeleshwari@hsmedifice.com", "Neel@290501");		 		   
@@ -34,7 +35,7 @@ public class LoginTest extends GlobalData {
 	
 	
 	@Test (priority = 2)
-	public void WrongPassword() throws InterruptedException{
+	public void LoginWithWrongPassword() throws InterruptedException{
 		
 		LoginPage login = new LoginPage(driver);
 	    Thread.sleep(2000);
@@ -50,7 +51,7 @@ public class LoginTest extends GlobalData {
 		 
 	 
 	@Test  (priority = 3)
-	public void ValidCredentials() throws InterruptedException {	
+	public void LoginWithValidCredentials() throws InterruptedException {	
 		LoginPage login = new LoginPage(driver);
 		Thread.sleep(2000);
 		login.Login("neeleshwari.mule@hsmedifice.com", "Neel@290501");

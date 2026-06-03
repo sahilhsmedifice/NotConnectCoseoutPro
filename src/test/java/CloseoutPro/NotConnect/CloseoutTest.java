@@ -64,7 +64,7 @@ public class CloseoutTest extends GlobalData{
     
         
 		@Test  (priority = 2)
-		public void createCloseout() throws InterruptedException {
+		public void createCloseoutItem() throws InterruptedException {
 
 			CloseoutPage add = new CloseoutPage(driver);
   
@@ -80,10 +80,12 @@ public class CloseoutTest extends GlobalData{
 		
 		
 		@Test    (priority = 3)
-		public void ApproveCloseout() throws InterruptedException, AWTException {
+		public void ApproveCloseoutItem() throws InterruptedException, AWTException {
 			 
 			CloseoutPage status = new CloseoutPage(driver);
 			 
+			 
+			
 			Thread.sleep(5000);
 			 
 			String desiredCloseoutName = "Automation Closeout 1";                             // always check name add and edit should same
@@ -105,16 +107,23 @@ public class CloseoutTest extends GlobalData{
 		    // 🔽 Small scroll down (adjust value if needed)
 		    ((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 200);");
 
-		    Thread.sleep(3000);
+		    
+	//////----------------------	    
+		    
+		    
+		    
+		    
+		    
+		    Thread.sleep(5000);
  			
 		    driver.findElement(By.xpath("//button[.='Choose Files']")).click();
 
 		 //  Wait properly (popup needs time)
-		 Thread.sleep(3000);
+		 Thread.sleep(5000);
 
 		 // Bring focus to file dialog (VERY IMPORTANT)
 		 Robot robot = new Robot();
-		 robot.delay(1000);
+		 robot.delay(3000);
 
 		 // copy file path
 		 StringSelection file = new StringSelection("C:\\File Types\\spec 03 mcel pob.pdf");
@@ -128,7 +137,7 @@ public class CloseoutTest extends GlobalData{
 		 robot.keyRelease(KeyEvent.VK_CONTROL);
 
 		 // small delay before enter
-		 robot.delay(1000);
+		 robot.delay(2000);
 
 		 // press ENTER
 		 robot.keyPress(KeyEvent.VK_ENTER);
@@ -145,7 +154,7 @@ public class CloseoutTest extends GlobalData{
 		   
 		    Assert.assertEquals(actualText, "Approved");  
 		    		 	
-		    Thread.sleep(3000);
+		    Thread.sleep(10000);
 		}
 		
 	 
@@ -153,13 +162,13 @@ public class CloseoutTest extends GlobalData{
 		
 		
 		@Test(priority = 4)
-		public void RejectCloseout() throws InterruptedException {
+		public void RejectCloseoutItem() throws InterruptedException {
 		
 			 CloseoutPage reject = new CloseoutPage(driver);
 		
 		      reject.clickReject();
 		
-			 Thread.sleep(5000);
+			 Thread.sleep(8000);
 			 
 			 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 			 
@@ -174,10 +183,10 @@ public class CloseoutTest extends GlobalData{
 		
 		
 		@Test (priority = 5)
-		public void Comments() throws InterruptedException {
+		public void AddComments() throws InterruptedException {
 			
 			CloseoutPage comment = new CloseoutPage(driver);
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			comment.enterText("script comment 1");
 			// need to add implicit wait till 
 			Thread.sleep(1000);
@@ -194,7 +203,7 @@ public class CloseoutTest extends GlobalData{
 		
 	
 		@Test(priority = 6)
-		public void UpdateCloseout() throws InterruptedException {
+		public void UpdateCloseoutItem() throws InterruptedException {
 
 		    CloseoutPage edit = new CloseoutPage(driver);
 		    Thread.sleep(5000);
@@ -214,7 +223,7 @@ public class CloseoutTest extends GlobalData{
 		
 		
 		@Test  (priority = 7)
-		public void deleteRestoreCloseout() throws InterruptedException {
+		public void deleteAndRestoreCloseoutItem() throws InterruptedException {
 			
 			  CloseoutPage restore = new CloseoutPage(driver);
 			

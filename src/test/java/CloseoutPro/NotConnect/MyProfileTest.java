@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 public class MyProfileTest extends GlobalData{
 	
 	@Test  (priority=1) 
-	public void EditProfile() throws InterruptedException {
+	public void EditMyProfile() throws InterruptedException {
 		
 		Initialize();
 		LoginCredentials();
@@ -51,7 +51,7 @@ public class MyProfileTest extends GlobalData{
 		String passwordvalidate = password.getPasswordValidation();
 		Assert.assertEquals(passwordvalidate, "Current Password does not match!");
 		
-		
+		driver.close();
 	
 	
 	}

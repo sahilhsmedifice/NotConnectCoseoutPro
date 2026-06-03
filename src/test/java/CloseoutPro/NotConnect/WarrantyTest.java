@@ -47,7 +47,7 @@ public class WarrantyTest extends GlobalData {
     
 
     @Test     (priority = 2)
-    public void createWarranty() throws InterruptedException {
+    public void createWarrantyTicket() throws InterruptedException {
 
         WarrantyPage add = new WarrantyPage(driver);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
@@ -88,7 +88,7 @@ public class WarrantyTest extends GlobalData {
     
     
     @Test   (priority = 3)
-    public void UpdateWarranty() throws InterruptedException {
+    public void UpdateWarrantyTicket() throws InterruptedException {
     	
     	 WarrantyPage update = new WarrantyPage(driver);
        
@@ -114,7 +114,7 @@ public class WarrantyTest extends GlobalData {
     
     @Test    (priority = 4)
      
-    public void SuspendResumeTicket() throws InterruptedException {
+    public void SuspendAndResumeTicket() throws InterruptedException {
     	
     	 WarrantyPage suspend = new WarrantyPage(driver);
     
@@ -167,7 +167,7 @@ public class WarrantyTest extends GlobalData {
     
     @Test    (priority = 6)
     
-    public void deleteWarranty() throws InterruptedException {
+    public void deleteAndPermanentDeleteWarranty() throws InterruptedException {
     	
     	 WarrantyPage delete = new WarrantyPage(driver);
             	

@@ -66,11 +66,11 @@ public class specificationTest extends GlobalData {
 		    driver.findElement(By.xpath("//ngx-dropzone-label[.='Drag and Drop']")).click();
 
 		 //  Wait properly (popup needs time)
-		 Thread.sleep(3000);
+		 Thread.sleep(5000);
 
 		 // Bring focus to file dialog (VERY IMPORTANT)
 		 Robot robot = new Robot();
-		 robot.delay(1000);
+		 robot.delay(3000);
 
 		 // copy file path
 		 StringSelection file = new StringSelection("C:\\File Types\\spec 03 mcel pob.pdf");
@@ -84,7 +84,7 @@ public class specificationTest extends GlobalData {
 		 robot.keyRelease(KeyEvent.VK_CONTROL);
 
 		 // small delay before enter
-		 robot.delay(1000);
+		 robot.delay(3000);
 
 		 // press ENTER
 		 robot.keyPress(KeyEvent.VK_ENTER);

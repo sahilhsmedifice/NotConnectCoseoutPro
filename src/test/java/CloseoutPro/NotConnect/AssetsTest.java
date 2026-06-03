@@ -15,22 +15,30 @@ public class AssetsTest extends GlobalData {
         LoginCredentials();
         
     	Thread.sleep(10000);
+    	
+    	selectProject();
+    	
         
-		String desiredProjectName = "123 - NotConnect Automation Project";
-		List<WebElement> Projects = getProjectList();
-
-		for (int i = 0; i < Projects.size(); i++) {
-			WebElement Project = Projects.get(i);
-			String UserName = Project.getText();
-
-			if (UserName.contains(desiredProjectName)) {
-				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", Project);
-				Thread.sleep(500);
-				Project.click();
-				break;
-			}
-		}
+//		String desiredProjectName = "123 - NotConnect Automation Project";
+//		List<WebElement> Projects = getProjectList();
+//
+//		for (int i = 0; i < Projects.size(); i++) {
+//			WebElement Project = Projects.get(i);
+//			String UserName = Project.getText();
+//
+//			if (UserName.contains(desiredProjectName)) {
+//				((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", Project);
+//				Thread.sleep(500);
+//				Project.click();
+//				break;
+//			}
+//		}
        
+    	
+    	
+    	
+    	
+    	
     }  
     
 		

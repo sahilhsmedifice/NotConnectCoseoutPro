@@ -57,7 +57,7 @@ public class ProjectsTest extends GlobalData {
     }
 
 	@Test        (priority=4)            //   (enabled=false)    
-    public void delete() throws InterruptedException {
+    public void deleteProject() throws InterruptedException {
     	
     	
 		ProjectsPage delete = new ProjectsPage(driver);

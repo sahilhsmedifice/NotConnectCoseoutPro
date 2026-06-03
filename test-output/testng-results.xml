@@ -1,323 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="40" passed="38" failed="2" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-28T18:58:15 IST" name="Suite" finished-at="2026-05-28T19:14:24 IST" duration-ms="968697">
+  <suite started-at="2026-06-03T11:57:52 IST" name="Default suite" finished-at="2026-06-03T11:58:35 IST" duration-ms="43201">
     <groups>
     </groups>
-    <test started-at="2026-05-28T18:58:15 IST" name="Test" finished-at="2026-05-28T19:14:24 IST" duration-ms="968697">
-      <class name="CloseoutPro.NotConnect.CloseoutTest">
-        <test-method signature="CloseoutItem()[pri:1, instance:CloseoutPro.NotConnect.CloseoutTest@292b08d6]" started-at="2026-05-28T19:03:11 IST" name="CloseoutItem" finished-at="2026-05-28T19:03:48 IST" duration-ms="36664" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CloseoutItem -->
-        <test-method signature="createCloseout()[pri:2, instance:CloseoutPro.NotConnect.CloseoutTest@292b08d6]" started-at="2026-05-28T19:03:48 IST" name="createCloseout" finished-at="2026-05-28T19:03:55 IST" duration-ms="7607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCloseout -->
-        <test-method signature="ApproveCloseout()[pri:3, instance:CloseoutPro.NotConnect.CloseoutTest@292b08d6]" started-at="2026-05-28T19:03:55 IST" name="ApproveCloseout" finished-at="2026-05-28T19:04:25 IST" duration-ms="30000" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":".chip.Approved"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8b0b51e21526155220d69c590937ab6, findElement {value=.chip.Approved, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, goog:processID: 22532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e8b0b51e21526155220d69c590937ab6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".chip.Approved"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8b0b51e21526155220d69c590937ab6, findElement {value=.chip.Approved, using=css selector}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, goog:processID: 22532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e8b0b51e21526155220d69c590937ab6
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at CloseoutPro.NotConnect.CloseoutPage.getApproveStatus(CloseoutPage.java:89)
-at CloseoutPro.NotConnect.CloseoutTest.ApproveCloseout(CloseoutTest.java:142)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ApproveCloseout -->
-        <test-method signature="RejectCloseout()[pri:4, instance:CloseoutPro.NotConnect.CloseoutTest@292b08d6]" started-at="2026-05-28T19:04:25 IST" name="RejectCloseout" finished-at="2026-05-28T19:04:35 IST" duration-ms="10048" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@mattooltip='Reject']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8b0b51e21526155220d69c590937ab6, findElement {value=//span[@mattooltip='Reject'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, goog:processID: 22532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e8b0b51e21526155220d69c590937ab6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@mattooltip='Reject']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e8b0b51e21526155220d69c590937ab6, findElement {value=//span[@mattooltip='Reject'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62849}, goog:processID: 22532, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62849/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e8b0b51e21526155220d69c590937ab6
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at CloseoutPro.NotConnect.CloseoutPage.clickReject(CloseoutPage.java:99)
-at CloseoutPro.NotConnect.CloseoutTest.RejectCloseout(CloseoutTest.java:160)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RejectCloseout -->
-        <test-method signature="Comments()[pri:5, instance:CloseoutPro.NotConnect.CloseoutTest@292b08d6]" started-at="2026-05-28T19:04:35 IST" name="Comments" finished-at="2026-05-28T19:04:43 IST" duration-ms="7388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Comments -->
-        <test-method signature="UpdateCloseout()[pri:6, instance:CloseoutPro.NotConnect.CloseoutTest@292b08d6]" started-at="2026-05-28T19:04:43 IST" name="UpdateCloseout" finished-at="2026-05-28T19:04:56 IST" duration-ms="13725" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UpdateCloseout -->
-        <test-method signature="deleteRestoreCloseout()[pri:7, instance:CloseoutPro.NotConnect.CloseoutTest@292b08d6]" started-at="2026-05-28T19:04:56 IST" name="deleteRestoreCloseout" finished-at="2026-05-28T19:05:03 IST" duration-ms="6927" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteRestoreCloseout -->
-      </class> <!-- CloseoutPro.NotConnect.CloseoutTest -->
-      <class name="CloseoutPro.NotConnect.LoginTest">
-        <test-method signature="WrongEmail()[pri:1, instance:CloseoutPro.NotConnect.LoginTest@5bf0d49]" started-at="2026-05-28T18:58:15 IST" name="WrongEmail" finished-at="2026-05-28T18:58:45 IST" duration-ms="29681" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WrongEmail -->
-        <test-method signature="WrongPassword()[pri:2, instance:CloseoutPro.NotConnect.LoginTest@5bf0d49]" started-at="2026-05-28T18:58:45 IST" name="WrongPassword" finished-at="2026-05-28T18:58:50 IST" duration-ms="5388" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WrongPassword -->
-        <test-method signature="ValidCredentials()[pri:3, instance:CloseoutPro.NotConnect.LoginTest@5bf0d49]" started-at="2026-05-28T18:58:50 IST" name="ValidCredentials" finished-at="2026-05-28T18:58:59 IST" duration-ms="9107" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidCredentials -->
-      </class> <!-- CloseoutPro.NotConnect.LoginTest -->
-      <class name="CloseoutPro.NotConnect.SettingTest">
-        <test-method signature="Settings()[pri:1, instance:CloseoutPro.NotConnect.SettingTest@45752059]" started-at="2026-05-28T19:12:55 IST" name="Settings" finished-at="2026-05-28T19:13:36 IST" duration-ms="40610" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Settings -->
-        <test-method signature="createCloseoutType()[pri:2, instance:CloseoutPro.NotConnect.SettingTest@45752059]" started-at="2026-05-28T19:13:36 IST" name="createCloseoutType" finished-at="2026-05-28T19:13:46 IST" duration-ms="9861" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCloseoutType -->
-        <test-method signature="upadteCloseoutType()[pri:3, instance:CloseoutPro.NotConnect.SettingTest@45752059]" started-at="2026-05-28T19:13:46 IST" name="upadteCloseoutType" finished-at="2026-05-28T19:13:52 IST" duration-ms="6944" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- upadteCloseoutType -->
-        <test-method signature="deleteCloseoutType()[pri:4, instance:CloseoutPro.NotConnect.SettingTest@45752059]" started-at="2026-05-28T19:13:52 IST" name="deleteCloseoutType" finished-at="2026-05-28T19:13:56 IST" duration-ms="3984" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCloseoutType -->
-        <test-method signature="createPhase()[pri:5, instance:CloseoutPro.NotConnect.SettingTest@45752059]" started-at="2026-05-28T19:13:56 IST" name="createPhase" finished-at="2026-05-28T19:14:15 IST" duration-ms="18445" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createPhase -->
-        <test-method signature="updatePhase()[pri:6, instance:CloseoutPro.NotConnect.SettingTest@45752059]" started-at="2026-05-28T19:14:15 IST" name="updatePhase" finished-at="2026-05-28T19:14:19 IST" duration-ms="4444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updatePhase -->
-        <test-method signature="deletePhase()[pri:7, instance:CloseoutPro.NotConnect.SettingTest@45752059]" started-at="2026-05-28T19:14:19 IST" name="deletePhase" finished-at="2026-05-28T19:14:24 IST" duration-ms="4248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletePhase -->
-      </class> <!-- CloseoutPro.NotConnect.SettingTest -->
-      <class name="CloseoutPro.NotConnect.specificationTest">
-        <test-method signature="Specifications()[pri:1, instance:CloseoutPro.NotConnect.specificationTest@206a70ef]" started-at="2026-05-28T19:01:55 IST" name="Specifications" finished-at="2026-05-28T19:02:49 IST" duration-ms="54155" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Specifications -->
-        <test-method signature="AddSpecification()[pri:2, instance:CloseoutPro.NotConnect.specificationTest@206a70ef]" started-at="2026-05-28T19:02:49 IST" name="AddSpecification" finished-at="2026-05-28T19:02:54 IST" duration-ms="5166" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AddSpecification -->
-        <test-method signature="UploadSpecification()[pri:3, instance:CloseoutPro.NotConnect.specificationTest@206a70ef]" started-at="2026-05-28T19:02:54 IST" name="UploadSpecification" finished-at="2026-05-28T19:03:11 IST" duration-ms="16999" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UploadSpecification -->
-      </class> <!-- CloseoutPro.NotConnect.specificationTest -->
-      <class name="CloseoutPro.NotConnect.MyProfileTest">
-        <test-method signature="EditProfile()[pri:1, instance:CloseoutPro.NotConnect.MyProfileTest@6c6cb480]" started-at="2026-05-28T18:58:59 IST" name="EditProfile" finished-at="2026-05-28T18:59:31 IST" duration-ms="31416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditProfile -->
-        <test-method signature="ChangePassword()[pri:2, instance:CloseoutPro.NotConnect.MyProfileTest@6c6cb480]" started-at="2026-05-28T18:59:31 IST" name="ChangePassword" finished-at="2026-05-28T18:59:34 IST" duration-ms="3651" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ChangePassword -->
-      </class> <!-- CloseoutPro.NotConnect.MyProfileTest -->
-      <class name="CloseoutPro.NotConnect.ProjectsTest">
-        <test-method signature="Projects()[pri:1, instance:CloseoutPro.NotConnect.ProjectsTest@c730b35]" started-at="2026-05-28T19:00:39 IST" name="Projects" finished-at="2026-05-28T19:01:11 IST" duration-ms="31774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Projects -->
-        <test-method signature="createProject()[pri:2, instance:CloseoutPro.NotConnect.ProjectsTest@c730b35]" started-at="2026-05-28T19:01:11 IST" name="createProject" finished-at="2026-05-28T19:01:17 IST" duration-ms="6681" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProject -->
-        <test-method signature="editProject()[pri:3, instance:CloseoutPro.NotConnect.ProjectsTest@c730b35]" started-at="2026-05-28T19:01:17 IST" name="editProject" finished-at="2026-05-28T19:01:35 IST" duration-ms="17856" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editProject -->
-        <test-method signature="delete()[pri:4, instance:CloseoutPro.NotConnect.ProjectsTest@c730b35]" started-at="2026-05-28T19:01:35 IST" name="delete" finished-at="2026-05-28T19:01:41 IST" duration-ms="6131" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- delete -->
-        <test-method signature="RestoreProject()[pri:5, instance:CloseoutPro.NotConnect.ProjectsTest@c730b35]" started-at="2026-05-28T19:01:41 IST" name="RestoreProject" finished-at="2026-05-28T19:01:55 IST" duration-ms="13381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- RestoreProject -->
-      </class> <!-- CloseoutPro.NotConnect.ProjectsTest -->
-      <class name="CloseoutPro.NotConnect.WarrantyTest">
-        <test-method signature="WarrantyTicket()[pri:1, instance:CloseoutPro.NotConnect.WarrantyTest@36ebc363]" started-at="2026-05-28T19:06:24 IST" name="WarrantyTicket" finished-at="2026-05-28T19:07:02 IST" duration-ms="38360" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- WarrantyTicket -->
-        <test-method signature="createWarranty()[pri:2, instance:CloseoutPro.NotConnect.WarrantyTest@36ebc363]" started-at="2026-05-28T19:07:02 IST" name="createWarranty" finished-at="2026-05-28T19:12:01 IST" duration-ms="298413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createWarranty -->
-        <test-method signature="UpdateWarranty()[pri:3, instance:CloseoutPro.NotConnect.WarrantyTest@36ebc363]" started-at="2026-05-28T19:12:01 IST" name="UpdateWarranty" finished-at="2026-05-28T19:12:22 IST" duration-ms="21510" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UpdateWarranty -->
-        <test-method signature="SuspendResumeTicket()[pri:4, instance:CloseoutPro.NotConnect.WarrantyTest@36ebc363]" started-at="2026-05-28T19:12:22 IST" name="SuspendResumeTicket" finished-at="2026-05-28T19:12:31 IST" duration-ms="8892" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SuspendResumeTicket -->
-        <test-method signature="closeWarrantyTicket()[pri:5, instance:CloseoutPro.NotConnect.WarrantyTest@36ebc363]" started-at="2026-05-28T19:12:31 IST" name="closeWarrantyTicket" finished-at="2026-05-28T19:12:44 IST" duration-ms="12988" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeWarrantyTicket -->
-        <test-method signature="deleteWarranty()[pri:6, instance:CloseoutPro.NotConnect.WarrantyTest@36ebc363]" started-at="2026-05-28T19:12:44 IST" name="deleteWarranty" finished-at="2026-05-28T19:12:55 IST" duration-ms="10850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteWarranty -->
-      </class> <!-- CloseoutPro.NotConnect.WarrantyTest -->
-      <class name="CloseoutPro.NotConnect.UserDirectoryTest">
-        <test-method signature="UserDirectary()[pri:1, instance:CloseoutPro.NotConnect.UserDirectoryTest@3c46e67a]" started-at="2026-05-28T18:59:34 IST" name="UserDirectary" finished-at="2026-05-28T19:00:21 IST" duration-ms="46576" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserDirectary -->
-        <test-method signature="CreateUser()[pri:2, instance:CloseoutPro.NotConnect.UserDirectoryTest@3c46e67a]" started-at="2026-05-28T19:00:21 IST" name="CreateUser" finished-at="2026-05-28T19:00:28 IST" duration-ms="6858" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateUser -->
-        <test-method signature="editUser()[pri:3, instance:CloseoutPro.NotConnect.UserDirectoryTest@3c46e67a]" started-at="2026-05-28T19:00:28 IST" name="editUser" finished-at="2026-05-28T19:00:34 IST" duration-ms="6405" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editUser -->
-        <test-method signature="deleteUser()[pri:4, instance:CloseoutPro.NotConnect.UserDirectoryTest@3c46e67a]" started-at="2026-05-28T19:00:34 IST" name="deleteUser" finished-at="2026-05-28T19:00:39 IST" duration-ms="4607" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- CloseoutPro.NotConnect.UserDirectoryTest -->
+    <test started-at="2026-06-03T11:57:52 IST" name="Default test" finished-at="2026-06-03T11:58:35 IST" duration-ms="43201">
       <class name="CloseoutPro.NotConnect.AssetsTest">
-        <test-method signature="Assets()[pri:1, instance:CloseoutPro.NotConnect.AssetsTest@22555ebf]" started-at="2026-05-28T19:05:03 IST" name="Assets" finished-at="2026-05-28T19:05:44 IST" duration-ms="40901" status="PASS">
+        <test-method signature="Assets()[pri:1, instance:CloseoutPro.NotConnect.AssetsTest@65fb9ffc]" started-at="2026-06-03T11:57:52 IST" name="Assets" finished-at="2026-06-03T11:58:22 IST" duration-ms="30574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Assets -->
-        <test-method signature="createAsset()[pri:2, instance:CloseoutPro.NotConnect.AssetsTest@22555ebf]" started-at="2026-05-28T19:05:44 IST" name="createAsset" finished-at="2026-05-28T19:06:09 IST" duration-ms="25081" status="PASS">
+        <test-method signature="createAsset()[pri:2, instance:CloseoutPro.NotConnect.AssetsTest@65fb9ffc]" started-at="2026-06-03T11:58:22 IST" name="createAsset" finished-at="2026-06-03T11:58:30 IST" duration-ms="7500" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.217)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9d8473a9e03e07ef363a7d1d71ff4a9, findElement {value=//span[.='Create'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61169}, goog:processID: 6048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61169/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9d8473a9e03e07ef363a7d1d71ff4a9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=148.0.7778.217)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9d8473a9e03e07ef363a7d1d71ff4a9, findElement {value=//span[.='Create'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61169}, goog:processID: 6048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61169/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9d8473a9e03e07ef363a7d1d71ff4a9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at CloseoutPro.NotConnect.AssetsPage.clickCreate(AssetsPage.java:31)
+at CloseoutPro.NotConnect.AssetsTest.createAsset(AssetsTest.java:54)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createAsset -->
-        <test-method signature="editAsset()[pri:3, instance:CloseoutPro.NotConnect.AssetsTest@22555ebf]" started-at="2026-05-28T19:06:09 IST" name="editAsset" finished-at="2026-05-28T19:06:24 IST" duration-ms="14690" status="PASS">
+        <test-method signature="editAsset()[pri:3, instance:CloseoutPro.NotConnect.AssetsTest@65fb9ffc]" started-at="2026-06-03T11:58:30 IST" name="editAsset" finished-at="2026-06-03T11:58:35 IST" duration-ms="5022" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[invalid session id
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9d8473a9e03e07ef363a7d1d71ff4a9, findElement {value=(//button[@class='btn btn-secondary btn-sm ng-star-inserted'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61169}, goog:processID: 6048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61169/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9d8473a9e03e07ef363a7d1d71ff4a9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c9d8473a9e03e07ef363a7d1d71ff4a9, findElement {value=(//button[@class='btn btn-secondary btn-sm ng-star-inserted'])[2], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.217, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\Laptop\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61169}, goog:processID: 6048, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61169/devtoo..., se:cdpVersion: 148.0.7778.217, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c9d8473a9e03e07ef363a7d1d71ff4a9
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at CloseoutPro.NotConnect.AssetsPage.clickEdit(AssetsPage.java:117)
+at CloseoutPro.NotConnect.AssetsTest.editAsset(AssetsTest.java:75)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editAsset -->
       </class> <!-- CloseoutPro.NotConnect.AssetsTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
